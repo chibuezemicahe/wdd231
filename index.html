@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course Home Page - Learn with Micah Erumaka">
+    <meta name="author" content="Micah Erumaka">
+    <title>Course Home | Micah Erumaka</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./scripts/date.js" defer> </script>
+    <script src="./scripts/course.js" defer> </script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="profile.jpg" alt="Micah Erumaka" class="profile-pic">
+            <span class="name">Micah Erumaka</span>
+            <nav>
+                <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="#">GitHub Profile</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <h1 class="main-title">Home</h1>
+        <div class="location-courses-container">
+            <section class="section learning">
+                <h2>Welcome to Micah Erumaka's Course, What I am Learning</h2>
+                <ul class="learning-list">
+                    <li>HTML5 & Semantic Markup</li>
+                    <li>CSS3 & Responsive Design</li>
+                    <li>JavaScript & Interactivity</li>
+                    <li>Accessibility & SEO</li>
+                </ul>
+            </section>
+            <section class="section location">
+                <h2>Umuahia</h2>
+                <img src="./assets/umuahia.jpg" alt="Umuahia City" class="location-img">
+            </section>
+           
+        </div>
+        <section class="section courses">
+            <h2>Courses To Take</h2>
+            
+            <div class="course-filters">
+                <button class="ççç" onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('cse')">CSE</button>
+                <button onclick="filterCourses('wdd')">WDD</button>
+            </div>
+        
+            <div id="course-list">
+                <!-- Courses will be dynamically added here -->
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Micah Erumaka, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
