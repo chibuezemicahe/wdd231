@@ -78,6 +78,46 @@ const courses = [
     }
 ]
 
-const filterCourses = ()=>{
+ document.querySelectorAll(".btn").forEach(button=>{
+    button.addEventListener('click',(event)=>{
+        const category = event.target.dataset.category;// to get category clicked
 
+        filterCourses(category);
+    })
+ })
+
+
+const displayCourses = (courseToShow) => {
+
+    const courseList = document.getElementById("course-list");
+    courseList.innerHTML = ""; // Clear previous content
+
+    courseToShow.forEach(course=>{
+        const courseItem = document.createElement('div');
+        courseItem.classList.add('course-item'); 
+        courseItem.innerHTML = 
+        `
+            <h3>${course.title} (${course.subject} ${course.number})</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+            <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+        `;
+        courseList.appendChild(courseItem);
+
+    })
 }
+
+ 
+const filterCourses = (category) => {
+    if (category === "all") {
+        displayCourses(courses); 
+    } else {
+        const filteredCourses = courses.filter(course => course.subject.toLowerCase() === category.toLowerCase());
+        displayCourses(filteredCourses); 
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    displayCourses(courses);
+});
