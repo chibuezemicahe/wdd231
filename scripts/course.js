@@ -78,6 +78,6 @@ const courses = [
     }
 ]
 
-const courseFilter = ()=>{
-    
+const filterCourses = ()=>{
+
 }
