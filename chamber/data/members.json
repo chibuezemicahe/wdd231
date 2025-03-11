@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Abia Tech Solutions",
+      "address": "15 Okpara Avenue, Umuahia, Abia",
+      "phone": "+234 803 456 7890",
+      "website": "https://abiatech.com",
+      "image": "abia_tech.png",
+      "membershipLevel": 3,
+      "industry": "Technology",
+      "description": "A leading software development and IT consulting firm in Abia State.",
+      "services": ["Web Development", "IT Support", "Cloud Solutions"]
+    },
+    {
+      "name": "Golden Agro Farms",
+      "address": "22 Aba Road, Umuahia, Abia",
+      "phone": "+234 806 789 1234",
+      "website": "https://goldenagro.com",
+      "image": "golden_agro.png",
+      "membershipLevel": 2,
+      "industry": "Agriculture",
+      "description": "A modern farm specializing in poultry, fisheries, and organic crops.",
+      "services": ["Poultry Farming", "Organic Crops", "Farm Consultancy"]
+    },
+    {
+      "name": "Royal Construction Ltd",
+      "address": "10 Factory Road, Umuahia, Abia",
+      "phone": "+234 809 555 6789",
+      "website": "https://royalconstruction.com",
+      "image": "royal_construction.png",
+      "membershipLevel": 3,
+      "industry": "Construction",
+      "description": "Specialists in real estate development, road construction, and renovation projects.",
+      "services": ["Building Construction", "Road Works", "Property Development"]
+    },
+    {
+      "name": "Umuahia Health Plus",
+      "address": "5 Hospital Road, Umuahia, Abia",
+      "phone": "+234 802 345 6789",
+      "website": "https://umuahiahealthplus.com",
+      "image": "umuahia_health.png",
+      "membershipLevel": 1,
+      "industry": "Healthcare",
+      "description": "A private hospital providing quality medical services to residents.",
+      "services": ["General Healthcare", "Surgery", "Pharmacy"]
+    },
+    {
+      "name": "Abia Fashion Empire",
+      "address": "17 Umudike Street, Umuahia, Abia",
+      "phone": "+234 807 654 3210",
+      "website": "https://abiafashion.com",
+      "image": "abia_fashion.png",
+      "membershipLevel": 2,
+      "industry": "Fashion",
+      "description": "A leading fashion brand designing and selling traditional and modern outfits.",
+      "services": ["Custom Tailoring", "Retail Fashion", "Clothing Accessories"]
+    },
+    {
+      "name": "Umuahia Printing Press",
+      "address": "8 Afaraukwu Road, Umuahia, Abia",
+      "phone": "+234 901 234 5678",
+      "website": "https://umuahiaprinting.com",
+      "image": "umuahia_printing.png",
+      "membershipLevel": 1,
+      "industry": "Printing & Publishing",
+      "description": "A full-service printing company offering high-quality prints and publications.",
+      "services": ["Business Cards", "Book Publishing", "Flyers & Banners"]
+    },
+    {
+      "name": "Bright Future Schools",
+      "address": "20 Isi Gate, Umuahia, Abia",
+      "phone": "+234 815 678 9012",
+      "website": "https://brightfutureschools.com",
+      "image": "bright_future_schools.png",
+      "membershipLevel": 3,
+      "industry": "Education",
+      "description": "A top-rated private school offering quality primary and secondary education.",
+      "services": ["Nursery & Primary", "Secondary Education", "Extracurricular Activities"]
+    }
+  ]
+  
