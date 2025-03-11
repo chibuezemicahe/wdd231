@@ -10,7 +10,7 @@ async function loadMembers() {
             
             memberCard.innerHTML = `
                 <div class="member-image">
-                    <img src="./images/${member.image}" alt="${member.name}">
+                    <img src="${member.image}" alt="${member.name}">
                 </div>
                 <div class="member-info">
                     <h3>${member.name}</h3>
