@@ -140,38 +140,53 @@ nav ul li a:hover, nav ul li a.active {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
+/* Card Styling */
 .highlight-card {
     background-color: var(--white);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .highlight-card:hover {
     transform: translateY(-5px);
 }
 
+/* Image Container */
 .card-image {
-    height: 200px;
-    background-color: var(--light-gray);
+    width: 100%;
+    height: 180px; /* Maintain a balanced height */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--light-gray);
 }
 
+/* Image Styling */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the box while maintaining aspect ratio */
+}
+
+/* Card Content */
 .card-content {
     padding: 20px;
+    text-align: center;
 }
 
 .card-content h3 {
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
+
 
 /* Weather Widget */
 .weather-widget {
