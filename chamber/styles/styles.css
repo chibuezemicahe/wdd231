@@ -160,7 +160,7 @@ nav ul li a:hover, nav ul li a.active {
 /* Image Container */
 .card-image {
     width: 100%;
-    height: 180px; /* Maintain a balanced height */
+    height: 180px; 
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -172,7 +172,7 @@ nav ul li a:hover, nav ul li a.active {
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fills the box while maintaining aspect ratio */
+    object-fit: cover; 
 }
 
 /* Card Content */
@@ -231,7 +231,7 @@ nav ul li a:hover, nav ul li a.active {
 .benefit-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Adjust spacing between icon and text */
+    gap: 15px; 
     padding: 15px;
     border-radius: 8px;
     transition: transform 0.2s ease-in-out;
@@ -242,7 +242,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .benefit-icon {
-    width: 45px; /* Slightly smaller */
+    width: 45px; 
     height: 45px;
     background-color: var(--secondary-color);
     border-radius: 50%;
@@ -250,20 +250,20 @@ nav ul li a:hover, nav ul li a.active {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    padding: 5px; /* Ensures images don't overflow */
+    padding: 5px; 
 }
 
 .benefit-icon img {
-    width: 60%; /* Ensures the image scales properly */
+    width: 60%; 
     height: auto;
-    max-width: 30px; /* Prevents excessive size on larger screens */
+    max-width: 30px; 
     max-height: 30px;
 }
 
 .benefit-content h3 {
     color: var(--primary-color);
     margin-bottom: 5px;
-    font-size: 1rem; /* Slightly smaller for better balance */
+    font-size: 1rem; 
     line-height: 1.3;
 }
 
