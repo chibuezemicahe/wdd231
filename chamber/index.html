@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abia State Chamber of Commerce - Connecting businesses, fostering growth, and promoting economic development in Abia State, Nigeria.">
+    <meta name="author" content="Micah Erumaka">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Abia State Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chibuezemicahe.github.io/wdd231/chamber/images/main-logo.png">
+    <meta property="og:url" content="https://chibuezemicahe.github.io/wdd231/chamber/directory.html">
+
+    <title>Abia State Chamber of Commerce - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/main-logo.png" alt="Abia State Chamber of Commerce Logo">
+                    <div class="logo-text">Abia State Chamber of Commerce</div>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/tsmain.jpg" alt="Chamber of Commerce Community">
+        <div class="hero-text">
+            <h1>Empowering Local Businesses</h1>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="images/networknight.jpg" alt="Business networking event">
+                </div>
+                <div class="event-content">
+                    <h3>Business Networking Night</h3>
+                    <p>Connect with local business leaders and entrepreneurs in a relaxed evening setting. Build valuable relationships and explore collaboration opportunities.</p>
+                    <div class="event-details">
+                        <span class="event-date">📅 March 25th, 6:00 PM</span>
+                        <span class="event-location">📍 Chamber Hall</span>
+                    </div>
+                    <a href="#" class="event-button">Register Now</a>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="images/workshop.jpg" alt="Entrepreneur workshop">
+                </div>
+                <div class="event-content">
+                    <h3>Entrepreneur Workshop</h3>
+                    <p>Join industry experts for an intensive workshop on business growth strategies, digital marketing, and financial planning for small businesses.</p>
+                    <div class="event-details">
+                        <span class="event-date">📅 April 10th, 10:00 AM</span>
+                        <span class="event-location">📍 Innovation Center</span>
+                    </div>
+                    <a href="#" class="event-button">Reserve Spot</a>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="images/ts.png" alt="Tech Summit 2024">
+                </div>
+                <div class="event-content">
+                    <h3>Tech Summit 2024</h3>
+                    <p>Discover the latest technological innovations and their impact on local businesses. Features keynote speakers from leading tech companies.</p>
+                    <div class="event-details">
+                        <span class="event-date">📅 May 15th, 9:00 AM</span>
+                        <span class="event-location">📍 Tech Hub</span>
+                    </div>
+                    <a href="#" class="event-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+        <h2>Local Weather</h2>
+        <div class="weather-container">
+            <div class="current-weather">
+                <div class="weather-icon">
+                    <!-- Weather icon will be inserted here -->
+                </div>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <span id="current-temp"></span>
+                    </div>
+                    <div id="weather-description"></div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="members-section spotlight">
+        <div class="container">
+            <h2 class="section-title">Company Spotlight</h2>
+            <div id="spotlightId" class="members-grid spotlight">
+                <!-- Members will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Abia State Chamber</h3>
+                    <p>123 Commerce Avenue<br>Umuahia, Abia State<br>Nigeria</p>
+                    <p>info@abiachamber.org<br>+234 800 123 4567</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Support</a></li>
+                        <li><a href="#">Events Calendar</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and business tips.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">TW</a>
+                        <a href="#">IG</a>
+                        <a href="#">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abia State Chamber of Commerce. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

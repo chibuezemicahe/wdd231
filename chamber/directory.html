@@ -18,6 +18,7 @@
     
    
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 </head>
 <body>
@@ -28,12 +29,12 @@
                     <img src="./images/main-logo.png" alt="Abia State Chamber of Commerce Logo">
                     <div class="logo-text">Abia State Chamber of Commerce</div>
                 </div>
-                <div class="menu-toggle">☰</div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
-                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="directory.html" class="active">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
                     </ul>
                 </nav>

@@ -1,0 +1,350 @@
+
+/* Events Section Styles */
+.events {
+    padding: 2rem 1rem;
+}
+
+.events h2 {
+    color: #004466;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.events h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #004466;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.event-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.05);
+}
+
+.event-content {
+    padding: 1.5rem;
+}
+
+.event-content h3 {
+    color: #004466;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.event-content p {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.event-date, 
+.event-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.event-button {
+    display: inline-block;
+    background-color: #004466;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+    background-color: #006688;
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .event-details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .events {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Spotlight Section Styles */
+.members-section.spotlight {
+    padding: 2rem 1rem;
+    background-color: var(--background-color);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.members-grid.spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.spotlight-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.spotlight-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.spotlight-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover .spotlight-image img {
+    transform: scale(1.05);
+}
+
+.spotlight-content {
+    padding: 1.5rem;
+}
+
+.spotlight-content h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-type {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.spotlight-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.spotlight-link:hover {
+    background-color: #2e4a9a;
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) {
+    .members-grid.spotlight {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .members-grid.spotlight {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .members-section.spotlight {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Weather Section Styles */
+.weather {
+    background-color: var(--background-color);
+    padding: 2rem 1rem;
+}
+
+.weather h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.weather-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.weather-icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#weather-description {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.forecast h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.forecast-card {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.forecast-day {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.forecast-temp {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.weather-error {
+    text-align: center;
+    color: #ff4444;
+    padding: 1rem;
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) {
+    .weather {
+        padding: 3rem 2rem;
+    }
+
+    .weather-container {
+        padding: 2rem;
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .current-weather {
+        gap: 2rem;
+    }
+
+    #forecast-container {
+        gap: 2rem;
+    }
+}
+
