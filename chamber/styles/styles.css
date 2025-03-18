@@ -182,31 +182,65 @@ nav ul li a:hover {
     color: var(--white);
     padding: 0 20px;
     max-width: 800px;
+    /* Add text protection layer */
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
 }
 
-.hero-text h2 {
-    font-size: 3rem;
+.hero-text h1 {
+    font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                 -1px -1px 0 rgba(0, 0, 0, 0.7),  
+                 1px -1px 0 rgba(0, 0, 0, 0.7),
+                 -1px 1px 0 rgba(0, 0, 0, 0.7),
+                 1px 1px 0 rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+}
+
+.hero-cta {
+    margin-top: 2rem;
 }
 
 .hero .cta-button {
     display: inline-block;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 700;
     padding: 15px 40px;
     border-radius: 5px;
     text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #ffd700;
 }
 
 /* Responsive adjustments */
@@ -215,12 +249,26 @@ nav ul li a:hover {
         height: 400px;
     }
 
-    .hero-text h2 {
+    .hero-text h1 {
         font-size: 2rem;
     }
 
     .hero .cta-button {
         padding: 12px 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -229,7 +277,7 @@ nav ul li a:hover {
         height: 300px;
     }
 
-    .hero-text h2 {
+    .hero-text h1 {
         font-size: 1.5rem;
     }
 
@@ -415,10 +463,39 @@ footer {
     margin-bottom: 10px;
 }
 
-.text-center{
-    margin-top: 40px; 
+.text-center {
     text-align: center;
+    margin: 2rem 0;
 }
+
+.text-center .cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-center .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #ffd700;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .text-center .cta-button {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+}
+
 .footer-links a {
     color: var(--light-gray);
     text-decoration: none;
@@ -595,5 +672,98 @@ footer {
 
     .member-info {
         padding: 15px;
+    }
+}
+
+/* Directory Page Hero Section */
+.directory-hero {
+    background-color: var(--primary-color);
+    padding: 60px 0;
+    position: relative;
+    background-image: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 58, 138, 0.9)),
+    url('../images/tsmain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.directory-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.directory-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white);
+    /* Add text protection layer */
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.directory-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.directory-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.directory-hero .cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.directory-hero .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #ffd700;
+}
+
+/* Responsive adjustments for directory hero */
+@media (max-width: 768px) {
+    .directory-hero {
+        padding: 40px 0;
+    }
+
+    .directory-hero h1 {
+        font-size: 2rem;
+    }
+
+    .directory-hero p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .directory-hero .cta-button {
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .directory-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .directory-hero .cta-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
     }
 }
