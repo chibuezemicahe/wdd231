@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abia State Chamber of Commerce - Connecting businesses, fostering growth, and promoting economic development in Abia State, Nigeria.">
+    <meta name="author" content="Micah Erumaka">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Abia State Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chibuezemicahe.github.io/wdd231/chamber/images/main-logo.png">
+    <meta property="og:url" content="https://chibuezemicahe.github.io/wdd231/chamber/directory.html">
+
+    <title>Abia State Chamber of Commerce - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer ></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/main-logo.png" alt="Abia State Chamber of Commerce Logo">
+                    <div class="logo-text">Abia State Chamber of Commerce</div>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <div class="join-container">
+            <!-- Form section -->
+            <div class="form-section">
+                <h1>Join the Chamber</h1>
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>
+                        First Name*
+                        <input type="text" 
+                               name="firstname" 
+                               required 
+                               autocomplete="given-name"
+                               title="Please enter your first name">
+                    </label>
+
+                    <label>
+                        Last Name*
+                        <input type="text" 
+                               name="lastname" 
+                               required 
+                               autocomplete="family-name"
+                               title="Please enter your last name">
+                    </label>
+
+                    <label>
+                        Title/Position
+                        <input type="text" 
+                               name="title" 
+                               pattern="[A-Za-z\s-]{7,}"
+                               autocomplete="organization-title"
+                               title="Please enter your position (minimum 7 characters, letters, spaces, and hyphens only)">
+                    </label>
+
+                    <label>
+                        Email*
+                        <input type="email" 
+                               name="email" 
+                               required 
+                               autocomplete="email"
+                               placeholder="example@domain.com"
+                               title="Please enter your email address">
+                    </label>
+
+                    <label>
+                        Mobile Phone*
+                        <input type="tel" 
+                               name="phone" 
+                               required 
+                               autocomplete="tel"
+                               title="Please enter your mobile phone number">
+                    </label>
+
+                    <label>
+                        Business/Organization Name*
+                        <input type="text" 
+                               name="organization" 
+                               required 
+                               autocomplete="organization"
+                               title="Please enter your business or organization name">
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Please select a membership level">
+                            <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                            <option value="bronze">Bronze Membership (₦5,000/year)</option>
+                            <option value="silver">Silver Membership (₦15,000/year)</option>
+                            <option value="gold">Gold Membership (₦50,000/year)</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business Description
+                        <textarea name="description" 
+                                  title="Please describe your business"
+                                  rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" 
+                           name="timestamp" 
+                           id="timestamp">
+
+                    <input type="submit" 
+                           value="Submit Membership Application" 
+                           class="submit-btn">
+                </form>
+            </div>
+
+            <!-- Membership cards section -->
+            <div class="membership-cards">
+                <div class="membership-card np-card animate-in">
+                    <h3>NP Membership</h3>
+                    <p class="price">Free</p>
+                    <p>For Non-Profit Organizations</p>
+                    <button class="info-btn" onclick="openModal('np-modal')">Learn More</button>
+                </div>
+
+                <div class="membership-card bronze-card animate-in">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">₦5,000/year</p>
+                    <p>Basic Business Package</p>
+                    <button class="info-btn" onclick="openModal('bronze-modal')">Learn More</button>
+                </div>
+
+                <div class="membership-card silver-card animate-in">
+                    <h3>Silver Membership</h3>
+                    <p class="price">₦15,000/year</p>
+                    <p>Enhanced Business Package</p>
+                    <button class="info-btn" onclick="openModal('silver-modal')">Learn More</button>
+                </div>
+
+                <div class="membership-card gold-card animate-in">
+                    <h3>Gold Membership</h3>
+                    <p class="price">₦50,000/year</p>
+                    <p>Premium Business Package</p>
+                    <button class="info-btn" onclick="openModal('gold-modal')">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Non-Profit Membership Benefits</h2>
+                <ul>
+                    <li>Basic directory listing</li>
+                    <li>Access to chamber newsletter</li>
+                    <li>Networking event invitations</li>
+                    <li>Member-to-member discounts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>Enhanced directory listing</li>
+                    <li>Social media mention (quarterly)</li>
+                    <li>Access to business resources</li>
+                    <li>All NP membership benefits</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>Featured directory listing</li>
+                    <li>Monthly social media promotion</li>
+                    <li>Business spotlight opportunity</li>
+                    <li>Event sponsorship opportunities</li>
+                    <li>All Bronze membership benefits</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>Priority directory listing</li>
+                    <li>Weekly social media promotion</li>
+                    <li>Homepage advertisement slot</li>
+                    <li>VIP networking events access</li>
+                    <li>Dedicated business consultant</li>
+                    <li>All Silver membership benefits</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Abia State Chamber</h3>
+                    <p>123 Commerce Avenue<br>Umuahia, Abia State<br>Nigeria</p>
+                    <p>info@abiachamber.org<br>+234 800 123 4567</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Support</a></li>
+                        <li><a href="#">Events Calendar</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and business tips.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">TW</a>
+                        <a href="#">IG</a>
+                        <a href="#">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abia State Chamber of Commerce. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+<script>
+    // Set the timestamp when the form loads
+    document.getElementById('timestamp').value = new Date().toISOString();
+</script>
