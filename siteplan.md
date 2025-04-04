@@ -1,4 +1,4 @@
-Site Plan: Abia State Chamber of Commerce
+Site Plan: Abia State Chamber of Commerce.
 
 Site Purpose
 The Abia State Chamber of Commerce website will serve as a business hub, connecting business owners across Abia State. The site will provide networking opportunities, promote local businesses, and attract more customers to its members.
