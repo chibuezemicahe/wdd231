@@ -1,0 +1,68 @@
+{
+    "locations": [
+        {
+            "id": 1,
+            "title": "National War Museum",
+            "image": "images/discover/war-museum.webp",
+            "address": "Umuahia North, Abia State",
+            "description": "Home to historic artifacts from the Nigerian Civil War, this museum preserves an important part of our national heritage.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 2,
+            "title": "Ariaria International Market",
+            "image": "images/discover/ariaria-market.webp",
+            "address": "Aba, Abia State",
+            "description": "One of Africa's largest markets, famous for leather works and textile manufacturing.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 3,
+            "title": "Amakama Wooden Cave",
+            "image": "images/discover/wooden-cave.webp",
+            "address": "Umuahia South, Abia State",
+            "description": "A natural wonder featuring unique wooden formations and local wildlife.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 4,
+            "title": "Akwete Weaving Centre",
+            "image": "images/discover/akwete.webp",
+            "address": "Ukwa East, Abia State",
+            "description": "Traditional textile crafting center known for the famous Akwete cloth.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 5,
+            "title": "Long Juju Shrine",
+            "image": "images/discover/long-juju.webp",
+            "address": "Arochukwu, Abia State",
+            "description": "Historic shrine and tourist destination showcasing local cultural heritage.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 6,
+            "title": "Azumini Blue River",
+            "image": "images/discover/blue-river.webp",
+            "address": "Ukwa East, Abia State",
+            "description": "Crystal clear waters perfect for boat rides and recreational activities.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 7,
+            "title": "Innovation Hub",
+            "image": "images/discover/tech-hub.webp",
+            "address": "Umuahia, Abia State",
+            "description": "Modern technology center fostering digital innovation and entrepreneurship.",
+            "learnMoreUrl": "#"
+        },
+        {
+            "id": 8,
+            "title": "Abia Tower",
+            "image": "images/discover/abia-tower.webp",
+            "address": "Umuahia, Abia State",
+            "description": "Iconic landmark representing the state's progress and aspirations.",
+            "learnMoreUrl": "#"
+        }
+    ]
+}

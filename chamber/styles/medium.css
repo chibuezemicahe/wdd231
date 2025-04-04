@@ -1,0 +1,93 @@
+/* Base styles for all screen sizes */
+.discover-main {
+    padding: 2rem 0;
+}
+
+.welcome-banner {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.location-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-card figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.location-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.location-card .content {
+    padding: 1.5rem;
+}
+
+.location-card h2 {
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+}
+
+.location-card address {
+    font-style: normal;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.location-card .learn-more {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Small screens (320-640px) */
+@media screen and (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium screens (641-1024px) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens (1025px+) */
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Desktop hover effects */
+    .location-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .location-card .learn-more:hover {
+        background-color: var(--secondary-color);
+    }
+}
