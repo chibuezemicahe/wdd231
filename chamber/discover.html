@@ -1,15 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Abia State - Places to visit and explore in our vibrant community">
-    <title>Discover Abia - Chamber of Commerce</title>
+    <meta name="description" content="Abia State Chamber of Commerce - Connecting businesses, fostering growth, and promoting economic development in Abia State, Nigeria.">
+    <meta name="author" content="Micah Erumaka">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Abia State Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://chibuezemicahe.github.io/wdd231/chamber/images/main-logo.png">
+    <meta property="og:url" content="https://chibuezemicahe.github.io/wdd231/chamber/directory.html">
+
+    <title>Abia State Chamber of Commerce - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+   
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/discover.js" defer></script>
 </head>
 <body>
@@ -23,8 +36,8 @@
                 <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="discover.html" class="active">Discover</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
                     </ul>
@@ -46,7 +59,46 @@
     </main>
 
     <footer>
-        <!-- Your existing footer content -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Abia State Chamber</h3>
+                    <p>123 Commerce Avenue<br>Umuahia, Abia State<br>Nigeria</p>
+                    <p>info@abiachamber.org<br>+234 800 123 4567</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Support</a></li>
+                        <li><a href="#">Events Calendar</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and business tips.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">TW</a>
+                        <a href="#">IG</a>
+                        <a href="#">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abia State Chamber of Commerce. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
