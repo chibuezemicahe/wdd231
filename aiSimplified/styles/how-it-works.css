@@ -1,0 +1,92 @@
+
+/* Process Overview Section */
+.process-overview {
+    padding: 2rem 1rem;
+}
+
+.process-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.process-card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.process-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+.process-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Key Components Section */
+.key-components {
+    background-color: var(--background-color);
+    padding: 2rem 1rem;
+}
+
+.components-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.component {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.component h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Interactive Demo Section */
+.interactive-demo {
+    padding: 2rem 1rem;
+}
+
+.demo-container {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+/* Media Queries for Larger Screens */
+@media screen and (min-width: 768px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .components-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .process-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process-overview,
+    .key-components,
+    .interactive-demo {
+        padding: 4rem 2rem;
+    }
+}

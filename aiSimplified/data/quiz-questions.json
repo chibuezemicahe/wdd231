@@ -1,0 +1,109 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What type of AI is designed for specific tasks?",
+            "options": ["Narrow AI", "General AI", "Super AI", "Machine Learning"],
+            "correctAnswer": "Narrow AI",
+            "explanation": "Narrow AI (also called Weak AI) is designed to perform specific tasks like facial recognition or playing chess."
+        },
+        {
+            "id": 2,
+            "question": "When did AI as a field begin?",
+            "options": ["1950s", "1970s", "1990s", "2000s"],
+            "correctAnswer": "1950s",
+            "explanation": "AI as a field began in the 1950s with the Dartmouth Conference being a key founding moment."
+        },
+        {
+            "id": 3,
+            "question": "Which of these is NOT a key component of AI?",
+            "options": ["Floppy Disks", "Machine Learning", "Neural Networks", "Deep Learning"],
+            "correctAnswer": "Floppy Disks",
+            "explanation": "While storage is important, floppy disks are outdated technology and not a key component of AI."
+        },
+        {
+            "id": 4,
+            "question": "What is the most advanced form of AI theorized?",
+            "options": ["Narrow AI", "General AI", "Super AI", "Basic AI"],
+            "correctAnswer": "Super AI",
+            "explanation": "Super AI (ASI) is theorized to be the most advanced form, potentially surpassing human intelligence in all areas."
+        },
+        {
+            "id": 5,
+            "question": "Which AI type matches human intelligence?",
+            "options": ["Narrow AI", "General AI", "Super AI", "Basic AI"],
+            "correctAnswer": "General AI",
+            "explanation": "General AI (AGI) is theorized to match human-level intelligence across all domains."
+        },
+        {
+            "id": 6,
+            "question": "What is machine learning?",
+            "options": ["A type of computer", "A subset of AI", "A programming language", "A database system"],
+            "correctAnswer": "A subset of AI",
+            "explanation": "Machine learning is a subset of AI that enables systems to learn and improve from experience."
+        },
+        {
+            "id": 7,
+            "question": "What is deep learning based on?",
+            "options": ["Neural Networks", "Binary Trees", "Quantum Computing", "Block Chain"],
+            "correctAnswer": "Neural Networks",
+            "explanation": "Deep learning is based on artificial neural networks inspired by the human brain's structure."
+        },
+        {
+            "id": 8,
+            "question": "Which company developed ChatGPT?",
+            "options": ["Google", "Microsoft", "OpenAI", "Meta"],
+            "correctAnswer": "OpenAI",
+            "explanation": "ChatGPT was developed by OpenAI and released in November 2022."
+        },
+        {
+            "id": 9,
+            "question": "What is the primary goal of computer vision?",
+            "options": ["Text Analysis", "Image Understanding", "Speech Recognition", "Data Storage"],
+            "correctAnswer": "Image Understanding",
+            "explanation": "Computer vision aims to enable computers to understand and process visual information from the world."
+        },
+        {
+            "id": 10,
+            "question": "What is NLP in AI?",
+            "options": ["Natural Language Processing", "Neural Link Protocol", "Network Learning Process", "New Learning Program"],
+            "correctAnswer": "Natural Language Processing",
+            "explanation": "NLP enables computers to understand, interpret, and generate human language."
+        },
+        {
+            "id": 11,
+            "question": "Which game did AI first beat a human champion?",
+            "options": ["Chess", "Go", "Checkers", "Poker"],
+            "correctAnswer": "Checkers",
+            "explanation": "In 1994, the CHINOOK program became the first to beat a human world champion in checkers."
+        },
+        {
+            "id": 12,
+            "question": "What is reinforcement learning?",
+            "options": ["Learning from rewards", "Learning from books", "Learning from teachers", "Learning from copying"],
+            "correctAnswer": "Learning from rewards",
+            "explanation": "Reinforcement learning involves learning optimal actions through reward-based feedback."
+        },
+        {
+            "id": 13,
+            "question": "What is the Turing Test?",
+            "options": ["A math exam", "An intelligence test", "A computer speed test", "A human imitation test"],
+            "correctAnswer": "A human imitation test",
+            "explanation": "The Turing Test evaluates a machine's ability to exhibit intelligent behavior indistinguishable from a human."
+        },
+        {
+            "id": 14,
+            "question": "Which field uses AI for weather prediction?",
+            "options": ["Meteorology", "Biology", "Geology", "Chemistry"],
+            "correctAnswer": "Meteorology",
+            "explanation": "Meteorology uses AI and machine learning to analyze weather patterns and make predictions."
+        },
+        {
+            "id": 15,
+            "question": "What is robotics?",
+            "options": ["Study of robots", "Computer programming", "Website design", "Database management"],
+            "correctAnswer": "Study of robots",
+            "explanation": "Robotics is the interdisciplinary field that integrates computer science, engineering, and AI to design robots."
+        }
+    ]
+}

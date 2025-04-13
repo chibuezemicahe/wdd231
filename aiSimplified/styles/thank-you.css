@@ -1,0 +1,100 @@
+/* Thank You Page Specific Styles */
+
+.thank-you-main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.thank-you-content {
+    text-align: center;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.thank-you-content h1 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.submission-details {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.details-card {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.details-card p {
+    margin: 0.5rem 0;
+}
+
+.next-steps {
+    margin: 2rem 0;
+}
+
+.next-steps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.next-steps li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.next-steps li::before {
+    content: "✓";
+    color: var(--success-color);
+    position: absolute;
+    left: 0;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-dark);
+}
+
+.button.secondary {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.button.secondary:hover {
+    background-color: var(--border-color);
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .thank-you-main {
+        padding: 4rem 2rem;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,80 @@
+/* Larger Screen Styles */
+@media screen and (min-width: 768px) {
+    /* Header and Navigation */
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    /* Content Grid Layouts */
+    .ai-types-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .timeline-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Footer */
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-info {
+        margin-top: 0;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Main Content */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    /* Enhanced Typography */
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* Quiz Layout */
+    .quiz-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

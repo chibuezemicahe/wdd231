@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is AI? | AI Simplified</title>
+    <meta name="description" content="Discover the fundamentals of Artificial Intelligence through simple, easy-to-understand explanations and examples.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="What is AI? | AI Simplified">
+    <meta property="og:description" content="Discover the fundamentals of Artificial Intelligence through simple, easy-to-understand explanations and examples.">
+    <meta property="og:image" content="https://aisimplified.io/images/og-image.jpg">
+    <meta property="og:url" content="https://aisimplified.io">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/ai-logo.png" alt="AI Simplified Logo">
+                <span>AI Simplified</span>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <ul>
+                    <li><a href="index.html" class="active">What is AI?</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="examples.html">Real-Life Examples</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Understanding Artificial Intelligence</h1>
+            <p class="subtitle">Your journey into AI starts here</p>
+            <div class="hero-image">
+                <img src="assets/evo.webp" 
+                     alt="Artificial Intelligence Concept Illustration"
+                     width="800"
+                     height="600"
+                     decoding="async">
+            </div>
+        </section>
+
+        <section class="definition">
+            <h2>What is Artificial Intelligence?</h2>
+            <div class="content-card">
+                <p>Artificial Intelligence (AI) is technology that enables computers to mimic human intelligence. Think of it as teaching computers to learn, reason, and make decisions - similar to how humans do.</p>
+                <div class="key-concepts">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>
+                            <strong>Machine Learning:</strong>
+                            Systems that improve with experience
+                        </li>
+                        <li>
+                            <strong>Neural Networks:</strong>
+                            Computer systems inspired by human brains
+                        </li>
+                        <li>
+                            <strong>Deep Learning:</strong>
+                            Advanced pattern recognition
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="types">
+            <h2>Types of AI</h2>
+            <div class="ai-types-grid">
+                <article class="type-card">
+                    <h3>Narrow AI</h3>
+                    <img src="assets/narrow-ai.webp" 
+                         alt="Narrow AI Illustration"
+                         width="400"
+                         height="300"
+                         loading="lazy"
+                         decoding="async">
+                    <p>Designed for specific tasks like facial recognition or playing chess</p>
+                    <button class="info-btn" onclick="modal.open('Narrow AI', 'Narrow AI, also known as Weak AI, is designed to perform specific tasks. Examples include:<ul><li>Face recognition systems</li><li>Chess-playing programs</li><li>Virtual assistants like Siri</li><li>Recommendation systems</li></ul>')">Learn More</button>
+                </article>
+                
+                <article class="type-card">
+                    <h3>General AI</h3>
+                    <img src="assets/general.webp" 
+                         alt="General AI Illustration"
+                         width="400"
+                         height="300"
+                         loading="lazy"
+                         decoding="async">
+                    <p>Capable of performing any intellectual task that a human can</p>
+                    <button class="info-btn" onclick="modal.open('General AI', 'General AI, or Strong AI, refers to AI systems that possess human-like general intelligence. Currently theoretical, it would be able to:<ul><li>Learn and adapt like humans</li><li>Understand and generate natural language</li><li>Reason abstractly</li><li>Solve novel problems</li></ul>')">Learn More</button>
+                </article>
+                
+                <article class="type-card">
+                    <h3>Super AI</h3>
+                    <img src="assets/superAi.webp" 
+                         alt="Super AI Illustration"
+                         width="400"
+                         height="300"
+                         loading="lazy"
+                         decoding="async">
+                    <p>Theoretical AI that surpasses human intelligence across all fields</p>
+                    <button class="info-btn" onclick="modal.open('Super AI', 'Super AI, or Artificial Superintelligence (ASI), would theoretically:<ul><li>Surpass human intelligence in all areas</li><li>Have superior memory and data processing</li><li>Excel at creative and scientific thinking</li><li>Solve complex global challenges</li></ul>')">Learn More</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <h2>AI Through History</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <h3>1950s</h3>
+                    <p>Birth of AI as a field</p>
+                    <img src="assets/1950ai.webp" alt="1950s Computing">
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>1960s-70s</h3>
+                    <p>First chatbots and expert systems</p>
+                    <img src="assets/1960ai.jpg" alt="Early AI Systems">
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>1990s-2000s</h3>
+                    <p>Deep learning breakthrough</p>
+                    <img src="assets/1990.jpeg" alt="Modern AI">
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Present</h3>
+                    <p>AI in everyday life</p>
+                    <img src="assets/2025.jpeg" alt="Current AI">
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz-container">
+                <div class="quiz-card">
+                    <h3>Quick Quiz</h3>
+                    <form id="ai-quiz">
+                        <div class="question">
+                            <p>What type of AI is designed for specific tasks?</p>
+                            <label>
+                                <input type="radio" name="q1" value="narrow">
+                                Narrow AI
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="general">
+                                General AI
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="super">
+                                Super AI
+                            </label>
+                        </div>
+                        
+                        <div class="question">
+                            <p>When did AI as a field begin?</p>
+                            <label>
+                                <input type="radio" name="q2" value="1950s">
+                                1950s
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="1970s">
+                                1970s
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="1990s">
+                                1990s
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="quiz-submit">Check Answers</button>
+                    </form>
+                    <div id="quiz-results" class="hidden">
+                        <!-- Results will be displayed here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">What is AI?</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="examples.html">Real-Life Examples</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> AI Simplified</p>
+                <p>Created for WDD231 Course</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Dialog -->
+    <div class="modal" id="infoModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script type="module" src="scripts/quiz.js"></script>
+</body>
+</html>

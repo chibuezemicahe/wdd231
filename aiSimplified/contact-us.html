@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AI Simplified</title>
+    <meta name="description" content="Join our AI learning community and get in touch with our expert instructors for hands-on AI classes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Contact Us | AI Simplified">
+    <meta property="og:description" content="Join our AI learning community and get in touch with our expert instructors for hands-on AI classes.">
+    <meta property="og:image" content="https://aisimplified.io/images/contact-og.jpg">
+    <meta property="og:url" content="https://aisimplified.io/contact-us">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/ai-logo.webp" 
+                     alt="AI Simplified Logo"
+                     width="150"
+                     height="50"
+                     decoding="async">
+                <span>AI Simplified</span>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <ul>
+                    <li><a href="index.html">What is AI?</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="examples.html">Real-Life Examples</a></li>
+                    <li><a href="contact-us.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-hero">
+            <h1>Join Our AI Learning Community</h1>
+            <p>Take the first step towards mastering AI with our hands-on physical classes</p>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <form id="contactForm" action="thank-you.html" method="get">
+                    <div class="form-group">
+                        <label for="fullName">Full Name*</label>
+                        <input type="text" 
+                               id="fullName" 
+                               name="fullName" 
+                               required 
+                               minlength="2"
+                               pattern="[A-Za-z\s-]+"
+                               title="Please enter your full name (letters, spaces, and hyphens only)"
+                               autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required
+                               autocomplete="email"
+                               placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone" 
+                               required
+                               pattern="[0-9]{10,}"
+                               title="Please enter at least 10 digits"
+                               autocomplete="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseLevel">Preferred Course Level*</label>
+                        <select id="courseLevel" 
+                                name="courseLevel" 
+                                required>
+                            <option value="">Select a level</option>
+                            <option value="beginner">Beginner - AI Fundamentals</option>
+                            <option value="intermediate">Intermediate - Applied AI</option>
+                            <option value="advanced">Advanced - AI Development</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Class Time*</label>
+                        <select id="preferredTime" 
+                                name="preferredTime" 
+                                required>
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (9AM - 12PM)</option>
+                            <option value="afternoon">Afternoon (1PM - 4PM)</option>
+                            <option value="evening">Evening (5PM - 8PM)</option>
+                            <option value="weekend">Weekend Classes</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" 
+                                  name="message" 
+                                  rows="4"
+                                  maxlength="500"
+                                  placeholder="Tell us about your background and what you hope to achieve..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" 
+                               id="newsletter" 
+                               name="newsletter" 
+                               value="yes">
+                        <label for="newsletter">Subscribe to our AI learning newsletter</label>
+                    </div>
+
+                    <input type="hidden" 
+                           id="submissionTime" 
+                           name="submissionTime">
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Other Ways to Connect</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <h3>Visit Us</h3>
+                    <p>123 Tech Hub Street<br>Innovation District<br>Lagos, Nigeria</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Call Us</h3>
+                    <p>Phone: +234 123 456 7890<br>Mon-Fri: 9AM-5PM</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email Us</h3>
+                    <p>info@aisimplified.io<br>support@aisimplified.io</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">What is AI?</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="examples.html">Real-Life Examples</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> AI Simplified</p>
+                <p>Created for WDD231 Course</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
+
