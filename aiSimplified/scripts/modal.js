@@ -48,5 +48,4 @@ class Modal {
 // Initialize modal
 const modal = new Modal();
 
-// Example usage:
-// modal.open('Title', 'Content goes here');
+

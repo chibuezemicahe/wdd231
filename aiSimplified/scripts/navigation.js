@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
 
-    // Toggle menu when hamburger is clicked
+    
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('active');
-        // Update hamburger icon
+       
         menuToggle.textContent = nav.classList.contains('active') ? '✕' : '☰';
-        // Toggle aria-expanded
+       
         menuToggle.setAttribute('aria-expanded', nav.classList.contains('active'));
     });
 
@@ -32,3 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+

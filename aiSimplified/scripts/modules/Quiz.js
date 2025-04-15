@@ -82,7 +82,7 @@ export default class Quiz {
         });
         localStorage.setItem('quizScores', JSON.stringify(scores));
 
-        // Show results modal
+        // Display results
         modal.open('Quiz Results', `
             <div class="quiz-results">
                 <h3>Your Score: ${this.currentScore}/${totalQuestions} (${percentage.toFixed(1)}%)</h3>
@@ -101,3 +101,4 @@ export default class Quiz {
         `);
     }
 }
+
